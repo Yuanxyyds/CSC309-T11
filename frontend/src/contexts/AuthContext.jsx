@@ -68,7 +68,7 @@ export const AuthProvider = ({ children }) => {
         });
 
         if (res.ok) {
-            navigate("/");
+            navigate("/success");
             return "";
         } else {
             const err = await res.json();
